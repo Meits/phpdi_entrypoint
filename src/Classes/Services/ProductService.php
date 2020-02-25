@@ -17,14 +17,25 @@ class ProductService
     /**
      * Annotation combined with phpdoc:
      *
-     * @Inject
+     * @Inject()
      * @var Db
      */
     private $saver;
 
+
+    /**
+     * Annotation combined with phpdoc:
+     *
+     * @Inject
+     * @param Db $saver
+     */
+    public function __construct($saver)
+    {
+        $this->saver = $saver;
+    }
+
     public function save()
     {
-        dump($this->saver);
         $this->saver->save();
     }
 }

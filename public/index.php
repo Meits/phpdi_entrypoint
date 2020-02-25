@@ -17,8 +17,10 @@ $userManager->register('asdasd','asdasd');*/
 $app = require __DIR__ . '/../bootstrap/container.php';
 
 //$userManager = $app->get('App\Classes\Services\UserManager');
-$userManager = $app->get('UserManager');
-$userManager->register('asdasd','asdasd');
+//$userManager = $app->get('UserManager');
+//$userManager->register('asdasd','asdasd');
 
-$productService = $app->get('ProductService');
+$productService = $app->get('App\Classes\Services\ProductService');
 $productService->save();
+
+dump($app->get("database")['host']);
