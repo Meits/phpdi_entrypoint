@@ -6,8 +6,10 @@
  * Time: 11:54
  */
 
-namespace App\Classes;
+namespace App\Classes\Services;
 
+
+use App\Classes\Libs\Mailer;
 
 class UserManager
 {

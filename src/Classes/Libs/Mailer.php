@@ -6,7 +6,7 @@
  * Time: 11:54
  */
 
-namespace App\Classes;
+namespace App\Classes\Libs;
 
 
 class Mailer

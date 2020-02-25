@@ -8,4 +8,7 @@
 
 $builder = new \DI\ContainerBuilder();
 $builder->addDefinitions(require __DIR__ . '/dependencies.php');
+
+$builder->useAutowiring(false);
+$builder->useAnnotations(true);
 return $builder->build();

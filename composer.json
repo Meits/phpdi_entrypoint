@@ -1,6 +1,7 @@
 {
     "require": {
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^6.0",
+        "doctrine/annotations": "^1.8"
     },
     "autoload": {
         "psr-4": {
